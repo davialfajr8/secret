@@ -1,0 +1,81 @@
+/* Mengatur tampilan halaman secara keseluruhan */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0e4d7;
+    /* Background warna kertas */
+    font-family: 'Courier New', Courier, monospace;
+    /* Menggunakan font seperti tulisan tangan */
+}
+
+/* Kontainer untuk menampilkan efek buku */
+.book {
+    perspective: 1500px;
+}
+
+/* Halaman buku */
+.page {
+    background-color: #fffbe6;
+    /* Warna latar seperti kertas kuning */
+    border: 2px solid #d1b28b;
+    /* Garis tepi berwarna coklat muda */
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1);
+    /* Bayangan untuk memberi kesan depth */
+    width: 80%;
+    max-width: 600px;
+    padding: 30px;
+    font-size: 1.2em;
+    position: relative;
+    background-image: repeating-linear-gradient(to bottom, #fff, #fff 1px, #f2f2f2 1px, #f2f2f2 2px);
+    /* Garis-garis seperti buku tulis */
+    background-size: 100% 30px;
+    line-height: 1.8;
+    text-align: left;
+}
+
+/* Judul Permintaan Maaf */
+h1 {
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Teks permintaan maaf */
+p {
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+/* Tombol Kirim Permintaan Maaf */
+button {
+    background-color: #2980b9;
+    color: white;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    background-color: #3498db;
+}
+
+/* Pesan Terima Kasih */
+#thankYouMessage {
+    color: #27ae60;
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-align: center;
+}
